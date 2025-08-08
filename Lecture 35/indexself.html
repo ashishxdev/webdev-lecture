@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color: yellow;
+        } */
+        /* .box:first-child:first-line{
+            background-color: red;
+        } */
+        /* .boxes{
+            color: blue;
+            border: 2px solid black;
+        } */
+        /* a,p, .box, [data-color="primary"]{
+            background-color: aqua;
+            padding: 20px;
+            border: 2px solid black;
+        } */
+        /* .box:nth-child(1){
+            background-color: aqua;
+            border: 2px solid black;
+        } */
+        /* .box:nth-last-child(3){
+            background-color: chartreuse;
+        } */
+        /* .box:nth-child(even){
+            background-color: chartreuse;
+        } */
+        /* .box:nth-child(odd){
+            background-color: chartreuse;
+        } */
+        .boxes::before{
+            content: "Hey I am before boxes text";
+            color:red;
+        }
+        .boxes::after{
+            content: "Hey i am after boxes";
+            color: blue;
+        }
+        ::selection{
+            background-color: black;
+            color: yellow;
+        }
+        .box::first-letter{
+            color: gold;
+            font-size: 40px;
+            background-color: black;
+        }
+        input::placeholder{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod sit quisquam corrupti consequatur, reprehenderit, modi accusantium velit provident consectetur, veniam facere voluptatum veritatis. Obcaecati nostrum eveniet pariatur, soluta, at laudantium vel placeat dolor aliquid sapiente nobis officia ut, est laboriosam saepe nulla quas. Asperiores ipsa non pariatur, eum eos quae illo magnam explicabo beatae totam obcaecati dignissimos necessitatibus quasi possimus libero temporibus illum deserunt ea voluptatum natus laborum! Quo quidem, tempore est similique fugiat asperiores laudantium suscipit mollitia autem qui rem soluta aliquid! Ipsam, ipsa! Culpa commodi consequatur officia fugiat ullam animi vel ducimus voluptates consequuntur repudiandae pariatur incidunt explicabo magnam qui accusamus, facilis nobis sed maiores sequi! Porro nemo, magni vero asperiores minus unde, hic aspernatur placeat est architecto eligendi, cum delectus omnis! Perferendis numquam blanditiis reiciendis ducimus culpa a voluptatem doloremque odio minima nisi, maiores tempora. Tempora maiores nobis ullam architecto. Natus eveniet accusamus minus, veritatis voluptates tempore obcaecati corrupti mollitia asperiores nam in rerum eum voluptatum! Voluptatum, sed, saepe praesentium alias ducimus est nesciunt et, distinctio ullam ea dolores nostrum labore veniam ab quo laboriosam beatae. Nemo at beatae ipsum voluptatibus soluta accusantium rerum expedita? Repellat unde illo blanditiis, ducimus fugiat facilis natus magnam, repellendus possimus impedit voluptates ipsam nesciunt reiciendis recusandae eos ex qui placeat repudiandae exercitationem, laborum odio quod minima? Modi ipsa recusandae veniam repellat, voluptatum veritatis beatae commodi. Autem doloremque reprehenderit consectetur harum eaque, quibusdam sapiente libero mollitia delectus, voluptatum accusantium esse debitis voluptatibus tenetur dolorem iste porro consequatur voluptas ipsum eos in. Earum, iste iusto. Quod autem incidunt at soluta, deserunt animi harum quae officia omnis illum cumque voluptatem, magni adipisci? Dolorum impedit velit doloribus! Enim iusto tempora doloremque beatae, ad minima. Minima vero cum iure delectus quo repudiandae itaque perferendis iste possimus necessitatibus ea, nobis beatae cupiditate autem? Doloribus quibusdam rem nulla!</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your Name">
+    </div>
+</body>
+</html>
