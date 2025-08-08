@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & clear</title>
+    <style>
+        .cards{
+            border: 2px solid red;
+            display: flow-root; 
+            /* display: flow-root; due to this image will be in box */
+        }
+        .cards img{
+            /* float:left; */
+            float: right;
+        }
+        .card{
+            border: 2px solid black;
+        }
+        .cards :nth-child(3){
+            /* clear: right; */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width = 300px src="https://images.pexels.com/photos/13986595/pexels-photo-13986595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eius pariatur sapiente! Error reprehenderit laudantium corrupti explicabo, illum, tempore quia autem nam fugiat praesentium est modi similique, quasi fuga culpa.</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolores ratione corrupti? Placeat eaque asperiores modi eos mollitia iusto ut dicta voluptatibus ducimus recusandae dolorum sit ullam perferendis aliquid laudantium consectetur nostrum veniam excepturi, ratione illo. Distinctio quasi molestias aut natus adipisci. Non, assumenda laboriosam. Voluptate quas accusantium aliquid quam? Quam magni, tenetur asperiores ab blanditiis, dolores itaque laudantium excepturi deleniti nemo optio voluptates reiciendis impedit qui repudiandae animi recusandae magnam ut molestiae mollitia eveniet amet veniam ad. Dignissimos eaque iure beatae minus sed a dolore explicabo velit quibusdam similique sequi asperiores maxime, error alias. Quaerat quo dolorem tempora molestiae dolores consectetur quas blanditiis vel, repudiandae eligendi adipisci quod aliquam possimus saepe. Aliquid quisquam alias soluta, enim itaque dolores voluptas a sunt repellat! Incidunt, optio. Omnis impedit error, cumque doloremque minima accusamus animi dolores doloribus autem nobis molestias, cum illo obcaecati nisi exercitationem, aut voluptate porro similique sapiente! Voluptas aspernatur, praesentium minima ullam reprehenderit error porro, magni corrupti, necessitatibus soluta quibusdam voluptatum illum explicabo. Iure, dolorum esse ut sed sapiente incidunt consequuntur quia. Quae fuga nemo labore repellat doloremque modi fugit quidem doloribus? Voluptatum dolores iste necessitatibus? Sunt repellat delectus accusamus soluta officiis nemo iste laborum voluptatibus a! Cum, deserunt laborum. Animi iusto laborum reprehenderit ullam similique pariatur deserunt impedit deleniti nulla ut exercitationem quaerat assumenda at aperiam quisquam, ex fugit cum non distinctio perspiciatis cupiditate culpa molestias vitae. Neque suscipit necessitatibus dolore repellat ex velit nihil sequi aperiam magni, excepturi tenetur quo! Sapiente voluptatem recusandae ipsa optio sequi cupiditate porro voluptates molestiae alias delectus. Cumque, magni. Ipsa animi quos mollitia deserunt harum rem inventore, reprehenderit aliquam expedita officia porro adipisci in blanditiis dolore assumenda? Doloremque, nam ex neque, nisi fuga quo tempore mollitia quis aut ea corrupti eveniet perspiciatis modi magnam, cum maiores assumenda eligendi deserunt laboriosam in? Unde.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
