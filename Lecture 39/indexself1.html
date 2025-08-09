@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+        width: 80vw;
+        height: 80vh;
+        border: 2px solid black;
+        display: grid;
+        /* grid-template-columns: [phela] 120px [dusra] 100px [t]; */
+        /* grid-template-rows: 100px 100px 100px; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        /* grid-template-columns: repeat(4, 1fr); */
+        /* grid-template-columns: repeat(4, minmax(100px,1fr)); */
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(2, 80px);
+        align-content: flex-end;
+        place-content: center;
+        /* place-content: center; justif-content & align-content both center */
+        /* gap: 34px; */
+        row-gap: 10px;
+        column-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        }
+        .item{
+            border: 2px solid red;
+            height: 50px;
+            width: 50px;
+        }
+        .item-4{
+            /* grid-row: 1/2; */
+            /* grid-column: 1/2; */
+            /* grid-column: phela/dusra; */
+        }
+        .item-1{
+            /* grid-row: 1/2;*/
+            /* or you can do this too */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 2; */
+            /* grid-column: 1/2; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
