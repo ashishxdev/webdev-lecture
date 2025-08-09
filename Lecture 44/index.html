@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 30px;
+            margin: 50px auto;
+            width: 900px;
+            height: 600px;
+        }
+
+        .box {
+            background-color: #f9f9f9;
+            font-family: "Segoe UI";
+            display: flex
+;
+    flex-direction: column;
+    align-items: center;
+        }
+
+        .smallbox {
+            background-color: #5cb85c;
+            border-radius: 4px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 2px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .smallbox:hover{
+            background-color: blue;
+        }
+        a:hover{
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .less{
+            font-size: 10px;
+        }
+        .moreless{
+            font-size: 7px;
+            word-break: break-all;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>Pricing </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>Resources </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>About Us </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li>
+                        <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="">
+            </div>
+            </li>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <div class="box">
+                <h3>English</h3>
+                <p>&nbsp;</p>
+                <span class="smallbox"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe">Download 64-bit</a></span>
+                <p class="less">SHA256 </p>
+                   <p class="moreless">FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E</p>
+            </div>
+            <div class="box">
+                <h3>Deutsch</h3>
+                <p>German</p>
+                <span class="smallbox"><a href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe">Download 64-bit</a></span>
+                <p class="less">SHA256 </p>
+                    <p class="moreless">3652B8B1A9D20F9779E2C6A4CBF3DBEA46BE184BD7B99E9E2366ECC45819F845
+
+                </p>
+            </div>
+            <div class="box">
+                <h3>Italiano</h3>
+                <p>Italian</p>
+                <span class="smallbox"><a href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe">Download 64-bit</a></span>
+                <p class="less">SHA256 </p>
+                   <p class="moreless">BAF3CBC4AB8E4425B2D0DE0235CA9C749C91E57B07D82524E06CF76AE46C45DC</p>
+            </div>
+            <div class="box">
+                <h3>Español</h3>
+                <p>Spanish</p>
+                <span class="smallbox"><a href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe">Download 64-bit</a></span>
+                <p class="less">SHA256 </p>
+                    <p class="moreless">0A791D355F3B9B08F6A8D3987FA524AA4C8FBEA8974FF197F67BAC529873B956</p>
+            </div>
+            <div class="box">
+                <h3>français</h3>
+                <p>France</p>
+                <span class="smallbox"><a href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe">Download 64-bit</a></span>
+                <p class="less">SHA256 </p>
+                    <p class="moreless">0137310489EECFB5CCA5951586967E3934BE5C8DE43059AE082402ECDEF68459</p>
+            </div>
+            <div class="box">
+                <h3>Português brasileiro</h3>
+                <p>Brazil</p>
+                <span class="smallbox"><a href="https://downloads.ultraedit.com/main/ue/win/ue_portguese_64.exe">Download 64-bit</a></span>
+                <p class="less">SHA256 </p>
+                    <p class="moreless">4A92218408CFD5DC2000B38E7371FAE718C722A96B296067A282DCE7E601B74F</p>
+            </div>
+            <div class="box">
+                <h3>日本</h3>
+                <p>Japan</p>
+                <span class="smallbox"><a href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe">Download 64-bit</a></span>
+                <p class="less">SHA256 </p>
+                    <p class="moreless">696614BAF75279E067E4D7B2C8DD2EF9175B66708D14DFBE880CC998D4C948C2</p>
+            </div>
+        </div>
+</body>
+
+</html>
