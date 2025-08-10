@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+</head>
+<style>
+    .container{
+        height: 70vh;
+        width: 70vw;
+        background-color: yellow;
+    }
+    .box{
+        height: 5vh;
+        width: 8vw;
+        /* animation-name: aranimation; */
+        /* animation-duration: 1s; */
+        /* animation-iteration-count: 3; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-play-state: paused; */
+        /* animation-play-state: running; */
+        /* animation-direction: reverse; */
+        /* animation-iteration-count: infinite; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        /* animation: aranimation 2s ease-in-out 3 reverse; */
+        /* animation: aranimation 1s ease-in-out 1 backwards; */
+        animation: aranimation 10s ease-in-out 1,
+                   animation2 2s ease-in-out 2;
+        /* animation: aranimation 1s ease-in-out 1 forwards; */
+    }
+    @keyframes aranimation {
+        from{
+            background-color: red;
+        }
+        to {
+            background-color: black;
+            transform: translateX(100px) translateY(300px);
+        }
+    }
+    @keyframes animation2 {
+        0%{
+            transform: rotate(50deg);
+        }
+        30%{
+            transform: rotate(150deg);
+        }
+        60%{
+            transform: rotate(250deg);
+        }
+        90%{
+            transform: rotate(350deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
