@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is meta description">
+    <meta name="keywords" content="this, is, meta, keywords">
+    <title>Revise</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+        *{
+            margin: 20px 20px 0px;
+            background-color: black;
+            color: white;
+            font-family: "Mozilla Headline", sans-serif;
+        }
+        h1{
+            padding: 0px 0px 20px;
+            text-align: center;
+            margin: auto;
+            text-transform: uppercase;
+        }
+        strong{
+            margin: 20px 8px 10px 20px;
+            border-radius: 8px;
+            background-color: yellow;
+            padding: 3px 9px;
+            color: black;
+        }
+        em{
+            margin: 20px 8px 10px;
+            border-radius: 8px;
+            color: black;
+            background-color: aqua;
+            padding: 3px 9px;
+        }
+        .linkedin a{
+            color: white;
+            background-color: red;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+        .firstimg img{
+            border-radius: 30px;
+        }
+        table{
+            /* border-collapse: collapse; */
+            border-collapse: separate;
+            border-spacing: 6px 5px;
+            /* 10px space between columns and 3px space between rows */
+        }
+        th,td{
+            border: 2px solid red;
+        }
+        #pincode{
+            background-color: red;
+            border-radius: 8px;
+        }
+        #pincode::placeholder{
+            color: white;
+            padding: 0px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="box">
+    <h1>Introduction</h1>
+    <strong>Aashish</strong>
+    <em>I am 21 years old.</em>
+    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo natus quaerat voluptatibus et nesciunt inventore numquam, officiis blanditiis molestias reprehenderit pariatur in.</p>
+    </div>
+    <div class="linkedin"><a href="https://www.linkedin.com/in/ashishranatech/" target="_blank">Linkedin</a>
+    <!-- <div class="linkedin"><a href="https://www.linkedin.com/in/ashishranatech/" target="_self">Linkedin</a></div> -->
+    </div>
+    <div class="firstimg">
+     <img  width = "300px" src="https://codingweek.org/wp-content/uploads/2023/09/chris-ried-ieic5Tq8YMk-unsplash-scaled.jpg" alt="">
+    </div>
+    <table style="color: white;">
+        <caption>Skills</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Expertise</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Graphic Design</td>
+                <td>1 Year</td>
+                <td>6 Months</td>
+            </tr>
+            <tr>
+                <td>Video Editing</td>
+                <td>1 Year</td>
+                <td>6 Months</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Contour Education</td>
+                <td>Video Editing Team Leader</td>
+                <td>1.6 Years</td>
+            </tr>
+        </tfoot>
+    </table>
+    </header>
+    <nav>
+    <ul type="circle">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+    </ul>
+    <ol type="A" start="10">
+        <li>Ok</li>
+        <li>Not Okay</li>
+        <li>Its Okay</li>
+    </ol>
+    </nav>
+    <main>
+    <dl>
+        <dt>Happy</dt>
+        <dd>To be Happy Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nemo?</dd>
+    </dd>
+    <form action="\submit.php" method="post">
+    <div>
+        <select name="language">
+            <option value="English">English</option>
+            <option value=""></option>
+        </select>
+    </div>
+    <div style="background-color: yellow;">
+        <label style="background-color: red; padding: 0px 10px; border-radius: 7px;" for="pincode">India Pincode</label>
+        <input type="pincode" id="pincode" placeholder="Enter your Pincode">
+    </div>
+    <div>
+        <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        <label style="margin: 20px 0px; " for="subscribe">Subscribe to newsletter</label>
+        <input type="reset">
+        <input type="submit">
+        </div>
+    </form>
+    <figure>
+    <iframe src="https://archive.codewithharry.com/tutorial/html-select-and-textarea/" height="700" width="500"></iframe>
+    </figure>
+    <div>
+        <pre style="padding: 0px; margin: 0px">
+            <code>
+                #include &lt;iostream&gt;
+                using namespace std;
+                int main(){
+                    cout &lt;&lt; "Me &amp; You"&lt;&lt; endl;
+                    return 0; 
+                }
+            </code>
+        </pre>
+        <blockquote cite="google.com">
+            This is Blockquote.
+        </blockquote>
+        <q cite="google.com">
+            This is Q quote.
+        </q>       
+        <canvas style = "border: 2px solid red; height: 10px; width: 20px;">RED</canvas> 
+
+    </div>
+    </main>
+</body>
+</html>
