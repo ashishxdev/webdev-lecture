@@ -1,12 +1,15 @@
-let a = 7
+// using reduce 
+// let a = 10
+// function factorial(number){
+//  let arr = Array.from(Array(number+1).keys())
+//  let c = arr.slice(1).reduce((a,b)=>a*b)
+//  return c
+// }
+// console.log(factorial(a))
 
-function factorial(number){
-   let arr = Array.from(Array(number+1).keys())
-   let c = arr.slice(1,).reduce((a, b)=> a*b )
-   return c
-}
 
-
+// using for loop
+let a = 4;
 function facFor(number){
     let fac = 1;
     for (let index = 1; index <= number; index++) {
@@ -14,5 +17,4 @@ function facFor(number){
     }
     return fac
 }
-console.log(factorial(a))
 console.log(facFor(a))
