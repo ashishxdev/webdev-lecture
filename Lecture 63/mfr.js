@@ -4,8 +4,9 @@
 //     const element = a[index];
 //     newa.push(element**2)
 // }
+// console.log(newa)
 
-// map
+// // map
 // let newa = a.map((e)=>{
 //     return e**2 
 // })
@@ -18,20 +19,21 @@
 //     }
 //     return false
 // }
+// console.log(newa.filter(greaterthantwenty))
 // console.log(newa.filter((e)=>{
 //     if (e > 20){
 //         return true
 //     }
 //     return false}))
-// console.log(newa.filter(greaterthantwenty))
+// console.log(newa.filter(e => e > 20));
 
 // reduce
-// let a = [1,3,4,5,6]
-// let red = (a,b)=>{
-//     return a*b
-// }
-// console.log(a.reduce(red))
+let a = [1,3,4,5,6]
+let red = (a,b)=>{
+    return a*b
+}
+console.log(a.reduce(red))
 
-// array from
+// // array from
 arr = Array.from("Aashish")
 console.log(arr)
