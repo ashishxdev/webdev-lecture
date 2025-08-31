@@ -61,7 +61,7 @@ let numbers = [43,98,2,6,6]
 // console.log(numbers)
 // console.log(numbers.length)
 
-// we can add numbers to with splice
+// we can add numbers too with splice
 // console.log(numbers.splice(2,2,344,456))
 // console.log(numbers)
 
