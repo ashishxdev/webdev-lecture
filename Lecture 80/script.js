@@ -32,7 +32,7 @@ class lion extends Animal{
         console.log("Sher born hogya hai")
     }
     eats(){
-        super.eats()
+        super.eats() // Due to this first eats() will run of animal class
         console.log("m dbake khata hu")
     }
     jumps(){
@@ -40,13 +40,14 @@ class lion extends Animal{
     }
 }
 let a = new Animal("Bunny")
-console.log(a)
+// console.log(a)
 // console.log(a.name)
 // console.log(a.eats())
 // console.log(a.jumps())
 
 let l = new lion("Sheru")
-console.log(l)
+// console.log(l)
+// console.log(l.name)
 // console.log(l.eats())
 // console.log(l.jumps())
 

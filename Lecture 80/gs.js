@@ -25,6 +25,6 @@ class User {
   user.name = "" // Name is too short.
   console.log(user.name)
 
-  user.name = "Aashish"
-  console.log(user)
+  // user.name = "Aashish"
+  // console.log(user)
 
