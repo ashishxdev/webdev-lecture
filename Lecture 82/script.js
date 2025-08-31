@@ -5,8 +5,8 @@
 //         }, 1000);
 //     })
 // }
-// // let a = await sleep()
-// // let b = await sleep()
+// let a = await sleep()
+// let b = await sleep()
 // // it will show an error
 
 // // so we use iife that's creating a function
@@ -19,7 +19,7 @@
 
 // Destructuring
 // (async function main(){
-//     // let [x,y, ...rest] = [1, 5, 7, 8, 9] // x = 1, y = 5
+//     // let [x,y, ...rest] = [1, 5, 7, 8, 9] // x = 1, y = 5, rest = rest
 //     // console.log(x, y, rest)
 
 //     let obj = {
@@ -28,13 +28,14 @@
 //         c: 5
 //     }
 
-//     let {a, b} = obj
-//     console.log(a, b) // a = 3; b = 4;
+//     let {a, b, c} = obj
+//     console.log(obj);
+//     console.log(a, b, c) // a = 3; b = 4; c = 5;
 // })()
 
 // Spread syntax
 // function sum(a, b, c){
-//     return a+ b + c
+//     return a + b + c
 // }
 // let arr = [1, 4, 6]
 // console.log(sum(...arr)) // ... spread operator
