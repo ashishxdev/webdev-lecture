@@ -31,8 +31,8 @@ console.log("Hello I am conditional tutorial")
 // let age = 3;
 // let grace = 2;
 // age += grace;
-// console.log(age)
-// console.log(age -= grace)
+// console.log(age) // Output: 5
+// console.log(age -= grace) // Output: 3
 
 // if (age > 18){
 //     console.log("You can drive")
@@ -78,6 +78,7 @@ comment
 a = 6;
 b = 8;
 let c = a > b ? (a - b) : (b - a);
+console.log(c)
 
 /*
 translates to:
@@ -85,7 +86,6 @@ if(a>b){
     let c = a - b;
 }
 else {
-    let c = a - b;
+    let c = b - a;
 }
-
 */
