@@ -25,7 +25,7 @@ const callback = (arg,fn) => {
 const loadScript = (src, callback) => {
     let sc = document.createElement("script");
     sc.src = src;
-    sc.onload = callback("Popcorn",fn);
+    sc.onload = () => callback("Popcorn",fn);
     document.head.append(sc)
 }
 

@@ -45,12 +45,12 @@ let prom2 = new Promise((resolve, reject) => {
     }
 })
 
-// let p3 = Promise.all([prom1, prom2])
-// p3.then((a)=>{
-//     console.log(a)
-// }).catch(err=>{
-//     console.log(err)
-// })
+let p3 = Promise.all([prom1, prom2])
+p3.then((a)=>{
+    console.log(a)
+}).catch(err=>{
+    console.log(err)
+})
 // let p3 = Promise.reject([prom1, prom2])
 // p3.then((a)=>{
 //     console.log(a)
@@ -64,12 +64,6 @@ let prom2 = new Promise((resolve, reject) => {
 //     console.log(err)
 // })
 // let p3 = Promise.any([prom1, prom2])
-// p3.then((a)=>{
-//     console.log(a)
-// }).catch(err=>{
-//     console.log(err)
-// })
-// let p3 = Promise.reject([prom1, prom2])
 // p3.then((a)=>{
 //     console.log(a)
 // }).catch(err=>{
