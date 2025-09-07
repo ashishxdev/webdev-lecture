@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/${folder}/`)
+    let a = await fetch(`http://127.0.0.1:3000/Lecture 84 Project/${folder}/`)
     let response = await a.text();
     // console.log(response);
 
@@ -62,7 +62,7 @@ async function getSongs(folder) {
 
 const playmusic = (track, pause = false) => {
     // let audio = new Audio("/songs/" + track)
-    currentsong.src = `/${currFolder}/` + track
+    currentsong.src = `http://127.0.0.1:3000/Lecture 84 Project/${currFolder}/` + track
     if (!pause) {
         currentsong.play()
         play.src = "img/pause.svg"
@@ -72,7 +72,7 @@ const playmusic = (track, pause = false) => {
 
 }
 async function displayAlbums(){
-    let a = await fetch(`http://127.0.0.1:3000/songs/`)
+    let a = await fetch(`http://127.0.0.1:3000/Lecture 84 Project/songs/`)
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -88,7 +88,7 @@ async function displayAlbums(){
             if (folder === "songs") continue; 
 
             // Get the metadata of the folder
-            let a = await fetch(`/songs/${folder}/info.json`)
+            let a = await fetch(`http://127.0.0.1:3000/Lecture 84 Project/songs/${folder}/info.json`)
             let response = await a.json();
             // console.log(response)
             cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="${folder}" class="card">
@@ -97,7 +97,7 @@ async function displayAlbums(){
                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
                            </svg>
                         </div>
-                        <img src="/songs/${folder}/cover.jpg" alt="">
+                        <img src="http://127.0.0.1:3000/Lecture 84 Project/songs/${folder}/cover.jpg" alt="">
                         <h2>${response.title}</h2>
                         <p>${response.description}</p>
                     </div>`
