@@ -180,6 +180,9 @@ next.addEventListener("click", () => {
 document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
     // console.log("Setting volume to", e.target.value, "/ 100")
     currentsong.volume = parseInt(e.target.value) / 100
+    if(currentsong.volume > 0){
+        document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("img/mute.svg", "img/volume.svg");
+    }
 })
 
 // Add event listerner to mute volume
