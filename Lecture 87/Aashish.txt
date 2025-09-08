@@ -1,0 +1,2 @@
+I am been written by async promises
+I am been appended by async promises
