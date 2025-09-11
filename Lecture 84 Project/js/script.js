@@ -1,4 +1,4 @@
-// console.log("Let's write Javascript")
+// console.log("Javascript")
 let currentsong = new Audio();
 let songs;
 let currFolder;
@@ -84,7 +84,6 @@ async function displayAlbums(){
         if(e.href.includes("/songs/")){
             let folder = e.href.split("/").slice(-2)[0]
 
-            // ✅ skip the parent songs folder
             if (folder === "songs") continue; 
 
             // Get the metadata of the folder
