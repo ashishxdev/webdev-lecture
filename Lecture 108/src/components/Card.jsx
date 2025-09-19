@@ -7,6 +7,7 @@ const Card = (props) => {
       <img src='https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg' width={300} style={{border: "2px solid black"}}></img>
       <h1>{props.title}</h1>
       <p>{props.description}</p>
+      
     </div>
   )
 }
