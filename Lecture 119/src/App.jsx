@@ -11,24 +11,24 @@ function App() {
        } = useForm();
 
   // To add delay 
-  // const delay = (d)=>{
-  //   return new Promise((resolve,reject)=>{
-  //     setTimeout(() => {
-  //       resolve()
-  //     }, d*1000);
-  //   })
-  // }
+  const delay = (d)=>{
+    return new Promise((resolve,reject)=>{
+      setTimeout(() => {
+        resolve()
+      }, d*1000);
+    })
+  }
 
   const onSubmit = async(data) => {
     // await delay(2) // simulating network delay
     let r = await fetch("http://localhost:3000/", {method: 'POST', headers: {"Content-Type": "application/json"}, body: JSON.stringify(data)})
     let res = await r.text()
     console.log(data, res)
-    // if(data.username !== "rohan"){
-    //   setError("myform", {message: "Your form is not in good order because credentials are invalid"})
-    // }
-    // if(data.username == "shubham"){
-    //   setError("blocked", {message: "This user is blocked"})
+    if(data.username !== "rohan"){
+      setError("myform", {message: "Your form is not in good order because credentials are invalid"})
+    }
+    if(data.username == "shubham"){
+      setError("blocked", {message: "This user is blocked"})
     }
 
   return (
@@ -56,6 +56,7 @@ function App() {
       
     </>
   )
+}
 }
 
 export default App
