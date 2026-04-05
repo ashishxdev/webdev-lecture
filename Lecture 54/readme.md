@@ -1,0 +1,11 @@
+- How to link css file (link tag is used. rel => relationship with file href => which document)
+- How to link js file (script tag is used. src=> source of file)
+- What is Programming?
+- EcmaScript or Javascript
+- How to execute javascript
+- Console.log
+- Alert
+- Prompt
+- Confirm
+- Document.title
+- Document.body.style.backgroundColor

@@ -1,0 +1,8 @@
+- What is a variable?
+  - Rules for choosing variable name
+- var vs let in javascript
+- const
+- Primitive data types and objects
+- Why is typeof null “object”?
+- Object
+- Write a JavaScript program to store name, phone number and marks of a student using objects

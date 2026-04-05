@@ -1,14 +1,16 @@
-alert("Hello World");
+alert("Welcome to Javascript Revision")
 
-console.log("Code is running")
-console.log("Code is looking like a wow")
-var a = prompt ("Enter your number")
-console.log("Your number is" + a)
-var is_true = confirm("Are u sure u want to blast the cp")
-if (is_true){
-    console.log("Done with blast")
-} else{
-    console.log("Not successful")
+console.log("Let's Start our Javascript revision")
+
+var a = prompt("Enter your number")
+console.log("Your number is " + a)
+
+var is_true = confirm("Are u sure u wanna start the revision")
+if (is_true) {
+    console.log("Good Luck u gonna make it")
+    document.body.style.backgroundColor = "blue"
+} else {
+    console.log("You are a loser")
 }
-document.title = "Hey I am script.js"
-document.body.style.backgroundColor = "red"
+
+document.title = "Javascript Revision"
