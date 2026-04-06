@@ -1,0 +1,7 @@
+- Loops
+  - Types of Loops
+    - For loop
+    - For in loop
+    - For of loop
+    - While loop
+    - Do-While loop

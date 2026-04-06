@@ -1,0 +1,15 @@
+- NodeJS REPL (Read-Eval-Print Loop) is an interactive shell that allows you to execute JavaScript code line-by-line and see immediate results
+- Operators in Javascript
+  - Arithmetic Operator
+  - Assignment Operator
+  - Comparison Operator
+  - Logical Operator
+  - Bitwise Operator (Bitwise operators operate on binary representations of numbers and perform operations like AND, OR, XOR, and shifts.)
+- Comments
+- Conditional Statement
+  - If statement
+  - If else statement
+  - If else if statement
+  - Switch statement
+- Javascript Ternary Operator
+- Additional Info: If u want to run js file in vs code terminal using node js runtime envt just type node "file name"

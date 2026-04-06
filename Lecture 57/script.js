@@ -1,3 +1,4 @@
+// for loops
 // let a = 3; 
 // for (let o = 4; o < 10; o++){
 //     console.log(o); 
@@ -6,13 +7,13 @@
 //     console.log(a + o); 
 // }
 
-// let obj = {
+// for in loop
+// let details = {
 //     name:"Aashish",
 //     programmer:"yes",
-//     company:"AI"
+//     "company name":"AI"
 // }
-// // for in loop
-// for (const key in obj) { 
+// for (const key in details) { 
 //     console.log(key)
 // }
 
@@ -28,9 +29,9 @@
 //     a++;
 // }
 
-// do while loop
-let a = 9;
-do{
-    console.log(a);
-    a++;
-} while (a < 8)
+// do-while loop
+// let a = 5;
+// do{
+//     console.log(a);
+//     a++;
+// } while (a < 8)

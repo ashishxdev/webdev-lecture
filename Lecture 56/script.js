@@ -1,12 +1,11 @@
-console.log("Hello I am conditional tutorial")
-
-// if else condition statement
-// let age = 45;
-// if (age > 19){
-//     console.log("You can drive")
-// }
-// else{
-// console.log("You are not eligible")
+// if else if condition statement
+// let age = 57;
+// if (age < 10) {
+//     console.log("You are a kid")
+// } else if (age < 18 && age > 10) {
+//     console.log("You are a teenager")
+// } else {
+//     console.log("You are older")
 // }
 
 // arithmetic operators
@@ -34,28 +33,18 @@ console.log("Hello I am conditional tutorial")
 // console.log(age) // Output: 5
 // console.log(age -= grace) // Output: 3
 
-// if (age > 18){
-//     console.log("You can drive")
-// }
-// else{
-// console.log("You are not eligible")
-// }
-
-// comparison operator & if else if else ladder
+// Comparison operator 
 // let age = 3;
 // let grace = 2;
 // if (age == 18) {
 //     console.log("You can drive");
 // }
-
 // else if (age == 0) {
 //     console.log("Are you kidding?")
 // }
-
 // else if (age == 1) {
 //     console.log("Are you again kidding?")
 // }
-
 // else {
 //     console.log("You cannot drive");
 // }
@@ -68,17 +57,18 @@ console.log("Hello I am conditional tutorial")
 // console.log (a!=b || b==a)
 
 /*
-I am a 
-multiline 
+I am a
+multiline
 comment
 */
 // I am a single line comment
 
 // ternary operator
-a = 6;
-b = 8;
-let c = a > b ? (a - b) : (b - a);
-console.log(c)
+// a = 6;
+// b = 8;
+// let c = a > b ? (a - b) : (b - a)
+// let c = a > b ? (a - b) : (b - a);
+// console.log(c)
 
 /*
 translates to:
@@ -89,3 +79,30 @@ else {
     let c = b - a;
 }
 */
+
+// comparison operator
+// let a = 4;
+// let b = "4";
+// let c = "5";
+// if (a === b) {
+//     console.log("true")
+// } else {
+//     console.log("false")
+// }
+
+// switch statement
+let a = 10;
+switch (a) {
+    case 3:
+        console.log("value is 3")
+        break;
+    case 5:
+        console.log("value is 5")
+        break;
+    case 1:
+        console.log("value is 1")
+        break;
+    default:
+        console.log("No value assigned")
+        break;
+}
