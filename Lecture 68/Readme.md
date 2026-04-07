@@ -1,0 +1,3 @@
+- Searching the DOM
+  - document.getElementsByTagName
+  - document.getElementsById

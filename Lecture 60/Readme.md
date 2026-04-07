@@ -1,0 +1,17 @@
+- String
+- Template Literals
+  - String Interpolation
+- Escape Sequence Characters
+- String Properties and Methods
+  - .length
+  - .toUpperCase
+  - .toLowerCase
+  - .slice
+  - .replace
+  - .concat
+  - .repeat
+  - .trim
+  - .indexOf
+  - .startsWith
+  - .endsWith
+- Exercise Questions

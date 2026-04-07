@@ -16,15 +16,15 @@ Limited
 Hub
 
 */
-function businessname(x,y,z){
-    let num = Math.floor(Math.random()*3)
-    if (num==0){
+function businessname(x, y, z) {
+    let num = Math.floor(Math.random() * 3)
+    if (num == 0) {
         return x;
-    } else if (num==1){
+    } else if (num == 1) {
         return y;
     }
     else {
         return z;
     }
 }
-console.log(`Generated name is ${businessname("crazy","amazing","fire")} ${businessname("engine","foods","garments")} ${businessname("bros","limited","hub")} `)
+console.log(`Generated name is ${businessname("crazy", "amazing", "fire")} ${businessname("engine", "foods", "garments")} ${businessname("bros", "limited", "hub")} `)

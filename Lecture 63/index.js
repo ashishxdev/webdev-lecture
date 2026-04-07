@@ -1,5 +1,5 @@
 // let numbers = [1, 2, 3, 4, 5]
-// Index       0  1  2  3  4
+// Index          0  1  2  3  4
 // console.log(numbers)
 // console.log(numbers.length)
 // console.log(numbers[0])
@@ -10,11 +10,13 @@
 // Arrays are mutable
 // numbers[0] = 46;
 // console.log(numbers[0])
+// console.log(numbers)
 
 // Strings are inmutable
 // let seth = "Aashish"
 // console.log(seth)
 // seth[0] = "M"
+// console.log(seth.replace("Aashish", "Mohan"))
 // console.log(seth)
 
 // Array to string
@@ -56,7 +58,7 @@
 // console.log(arr1) 
 
 // splice
-let numbers = [43,98,2,6,6]
+let numbers = [43, 98, 2, 6, 6]
 // console.log(numbers.splice(2,2))
 // console.log(numbers)
 // console.log(numbers.length)
@@ -70,4 +72,4 @@ let numbers = [43,98,2,6,6]
 // console.log(numbers.slice(2,4))
 
 // reverse
-console.log(numbers.reverse())
+// console.log(numbers.reverse())

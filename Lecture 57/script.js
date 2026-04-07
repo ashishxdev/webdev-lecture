@@ -35,3 +35,14 @@
 //     console.log(a);
 //     a++;
 // } while (a < 8)
+
+// Exercise Question
+let obj = {
+    harry: 98,
+    rohan: 70,
+    aakash: 75
+};
+
+for (let key in obj) {
+    console.log(key + ":" + obj[key])
+}

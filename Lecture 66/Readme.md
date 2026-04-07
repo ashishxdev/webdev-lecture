@@ -1,0 +1,13 @@
+- Javascript in Browser
+- Developer Tools
+- Script Tag
+- Console Object methods
+  - assert
+  - clear
+  - warn
+  - info
+  - error
+  - table
+  - log
+- Interaction: Prompt, Accept & Confirm
+- Window Object -> DOM, BOM, Javascript core

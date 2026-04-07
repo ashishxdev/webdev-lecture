@@ -2,13 +2,21 @@
 
 // 6! = 6*5*4*3*2*1
 
-let num=[]
-let number= prompt("Enter a number for factorial")
-for (let index = 1; index <=number; index++) {
-    num.push(index)
+// using for loop
+// function factorial(number) {
+//     let fac = 1;
+//     for (let i = 1; i <= number; i++) {
+//         fac = fac * i
+//     }
+//     return fac
+// }
+// console.log(factorial(6))
+
+// using reduce
+function factorial(number) {
+    let num = Array.from(Array(number + 1).keys())
+    let fac = num.slice(1).reduce((a, b) => a * b)
+    return fac;
 }
-console.log(num)
-const red=(a,b)=>{
-    return a*b
-}
-console.log("The Factorial of the given number is: " ,num.reduce(red))
+console.log(factorial(4))
+

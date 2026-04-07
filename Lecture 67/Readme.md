@@ -1,0 +1,20 @@
+- DOM
+  - Children of an element
+    - element.firstChild, element.lastChild and element.childNodes
+  - Siblings and the parent
+  - Element only navigation
+    - document.previousElementSibling
+    - document.nextElementSibling
+    - document.firstElementChild
+    - document.lastElementChild
+    - document.childElementCount
+  - Table Links
+    - table.rows
+    - table.Caption
+    - table.tHead
+    - table.tFoot
+    - table.tBodies
+    - tbody.rows
+    - tr.cells
+    - tr.sectionRowIndex
+    - td.cellIndex

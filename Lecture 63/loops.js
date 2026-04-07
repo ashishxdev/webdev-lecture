@@ -21,12 +21,11 @@
 //     if (Object.prototype.hasOwnProperty.call(object, key)) {
 //         const element = object[key];
 //         console.log(key, element)
-        
 //     }
 // }
 
 // for of loop
-let a = [8, 9, 18, 20]
-for (const element of a) {
-    console.log(element)
-}
+// let a = [8, 9, 18, 20]
+// for (const element of a) {
+//     console.log(element)
+// }

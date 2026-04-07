@@ -13,49 +13,51 @@ This faulty calculator does following:
 It performs wrong operation 10% of the times
 
 */
+let randomval = Math.random()
+console.log(randomval)
 
-if (Math.random() < 0.1){
-function sum(a,b){
-    console.log(a - b);
-} 
-function min(a,b){
-    console.log(a / b);
-}
-function mult(a,b){
-    console.log(a - b);
-}
-function div(a,b){
-    console.log(a ** b);
-}
-function power(a,b){
-    console.log(a ** b);
-}
-function mod(a,b){
-    console.log(a % b);
-}
+if (randomval < 0.1) {
+    function sum(a, b) {
+        console.log(a - b);
+    }
+    function min(a, b) {
+        console.log(a / b);
+    }
+    function mult(a, b) {
+        console.log(a - b);
+    }
+    function div(a, b) {
+        console.log(a ** b);
+    }
+    function power(a, b) {
+        console.log(a ** b);
+    }
+    function mod(a, b) {
+        console.log(a % b);
+    }
 } else {
-function sum(a,b){
-    console.log(a + b);
-} 
-function min(a,b){
-    console.log(a - b);
-}
-function mult(a,b){
-    console.log(a * b);
-}
-function div(a,b){
-    console.log(a / b);
-}
-function power(a,b){
-    console.log(a ** b);
-}
-function mod(a,b){
-    console.log(a % b);
-} 
+    function sum(a, b) {
+        console.log(a + b);
+    }
+    function min(a, b) {
+        console.log(a - b);
+    }
+    function mult(a, b) {
+        console.log(a * b);
+    }
+    function div(a, b) {
+        console.log(a / b);
+    }
+    function power(a, b) {
+        console.log(a ** b);
+    }
+    function mod(a, b) {
+        console.log(a % b);
+    }
 }
 
-sum(8,2)
-min(8,2)
-mult(8,2)
-div(8,2)
-mod(8,2)
+sum(8, 2)
+min(8, 2)
+mult(8, 2)
+div(8, 2)
+mod(8, 2)
