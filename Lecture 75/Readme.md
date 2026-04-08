@@ -1,0 +1,12 @@
+- Asynchronous
+- callBack()
+  - CallBack Hell or Pyramid of Doom -> When we have callback under callbacks code gets difficult to manage
+- Promise
+  - Promise Chaining
+- Promise API
+  - Promise.all(promises)
+  - Promise.allSettled(promises)
+  - Promise.race(promises)
+  - Promise.any(promises)
+  - Promise.resolve(value)
+  - Promise.reject(error)

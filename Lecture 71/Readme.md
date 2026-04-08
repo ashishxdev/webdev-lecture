@@ -1,0 +1,29 @@
+- console.log & console.dir
+- TagName / NodeName
+- InnerHTML & OuterHTML
+- TextContent / innerText / outerText
+- Hidden Property
+- Attribute Methods
+  - elem.hasAttribute(name)
+  - elem.getAttribute(name)
+  - elem.setAttribute(name)
+  - elem.removeAttribute(name)
+  - elem.attributes
+- Data Attributes
+- Insertion Methods
+  - node.append()
+  - node.prepend()
+  - node.before()
+  - node.after()
+  - node.replaceWith()
+- Insert Adjacent HTML/Text/Element
+  - beforebegin
+  - beforeend
+  - afterend
+  - afterbegin
+- Node removal -> node.remove()
+- ClassName and ClassList
+  - elem.classlist.add/remove("class")
+  - elem.classlist.toggle("class")
+  - elem.classlist.contains("class")
+- document.designMode = "on" -> It makes the entire webpage editable

@@ -1,0 +1,3 @@
+- Throw Error
+  - parseInt() -> It converts a string → integer (number)
+- Try Catch

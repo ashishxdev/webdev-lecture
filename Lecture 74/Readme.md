@@ -1,0 +1,19 @@
+- Browser Events
+  - Mouse Events
+  - Keyboard Events
+  - Form Element Events
+  - Document Events
+- Handling Events
+  - addEventListener
+    - click
+    - dblclick
+    - contextmenu
+    - keydown
+  - removeEventListener
+- Event bubbling is a DOM event propagation mechanism where an event triggered on
+  a child element (target) triggers that same event on its parent, and then up through all ancestor elements
+- e.stopPropagation()
+- SetTimeout
+- ClearTimeout
+- SetInterval
+- ClearInterval

@@ -10,32 +10,33 @@
 // let rabbit = {
 //     jumps: true
 // }
+// console.log(rabbit.eats)
 // rabbit.__proto__ = animal; // sets rabbit.[[Prototype]] = animal
 // console.log(rabbit.eats) // True
 
 // Instead of using __proto__ everytime we use class
-class Animal{
-    constructor(name){
+class Animal {
+    constructor(name) {
         this.name = name
         console.log("Object bna diya")
     }
-    eats(){
+    eats() {
         console.log("Kha rha hoo")
     }
-    jumps(){
+    jumps() {
         console.log("Khood rha hoo")
     }
 }
-class lion extends Animal{
-    constructor(name){
+class lion extends Animal {
+    constructor(name) {
         super(name)
         console.log("Sher born hogya hai")
     }
-    eats(){
+    eats() {
         super.eats() // Due to this first eats() will run of animal class
         console.log("m dbake khata hu")
     }
-    jumps(){
+    jumps() {
         console.log("m shikari ko marunga")
     }
 }
@@ -46,10 +47,10 @@ let a = new Animal("Bunny")
 // console.log(a.jumps())
 
 let l = new lion("Sheru")
-// console.log(l)
-// console.log(l.name)
-// console.log(l.eats())
-// console.log(l.jumps())
+console.log(l)
+console.log(l.name)
+console.log(l.eats())
+console.log(l.jumps())
 
 console.log(l instanceof Animal) //true
 console.log(l instanceof lion) //true

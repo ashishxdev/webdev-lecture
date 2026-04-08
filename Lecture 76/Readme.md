@@ -1,0 +1,10 @@
+- Async/Await
+- Error Handling (try or catch)
+- Throwing Custom Error
+- Finally Clause
+- JSON.stringify() can not only convert objects and arrays into JSON strings, it can convert any JavaScript value into a string.
+- Methods:
+  - Get means getting data from google it’s an example getting data from different sites
+  - Post means posting data or submitting a form is thru post method or to send sensitive data alot data also can submit file thru post data (we can submit file thru get data directly but there are indirect ways) etc. We can send more data securely with post.
+  - Put request to update something
+  - Delete request is to delete something in server

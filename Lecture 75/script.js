@@ -13,20 +13,52 @@
 // console.log("The End")
 
 // callback function
+// const fn = () => {
+//   console.log("Nothing")
+// }
+
+// const callback = (arg, fn) => {
+//   console.log(arg)
+//   fn()
+// }
+
+// const loadScript = (src, callback) => {
+//   let sc = document.createElement("script");
+//   sc.src = src;
+//   sc.onload = () => callback("Popcorn", fn);
+//   document.head.append(sc)
+// }
+
+// loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
+
+// using promise
 const fn = () => {
-  console.log("Nothing")
-}
+  console.log("Nothing");
+};
 
-const callback = (arg,fn) => {
-    console.log(arg)
-    fn()
-}
-
-const loadScript = (src, callback) => {
+const loadScript = (src) => {
+  return new Promise((resolve, reject) => {
     let sc = document.createElement("script");
     sc.src = src;
-    sc.onload = () => callback("Popcorn",fn);
-    document.head.append(sc)
-}
 
-loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback )
+    sc.onload = () => {
+      resolve("Popcorn"); // success
+    };
+
+    sc.onerror = () => {
+      reject("Script failed to load"); // error
+    };
+
+    document.head.append(sc);
+  });
+};
+
+// usage
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js")
+  .then((arg) => {
+    console.log(arg); // "Popcorn"
+    fn();
+  })
+  .catch((err) => {
+    console.log(err);
+  });

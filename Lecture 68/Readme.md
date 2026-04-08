@@ -1,3 +1,11 @@
 - Searching the DOM
   - document.getElementsByTagName
-  - document.getElementsById
+  - document.getElementsByClassName
+  - document.getElementsByName
+  - document.getElementById
+  - document.querySelector
+  - document.querySelectorAll
+- matches, closest and contains method
+  - elem.matches(CSS)
+  - elem.closest(CSS) - Doesn't check siblings it only check parent or upwards ancestors
+  - elemA.contains(elemB)
