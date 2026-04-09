@@ -71,7 +71,7 @@ const playmusic = (track, pause = false) => {
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
 
 }
-async function displayAlbums(){
+async function displayAlbums() {
     let a = await fetch(`http://127.0.0.1:3000/Lecture 84 Project/songs/`)
     let response = await a.text();
     let div = document.createElement("div");
@@ -79,12 +79,12 @@ async function displayAlbums(){
     let anchors = div.getElementsByTagName("a")
     let cardContainer = document.querySelector(".cardcontainer")
     let array = Array.from(anchors)
-        for (let index = 0; index < array.length; index++) {
-            const e = array[index];
-        if(e.href.includes("/songs/")){
+    for (let index = 0; index < array.length; index++) {
+        const e = array[index];
+        if (e.href.includes("/songs/")) {
             let folder = e.href.split("/").slice(-2)[0]
 
-            if (folder === "songs") continue; 
+            if (folder === "songs") continue;
 
             // Get the metadata of the folder
             let a = await fetch(`http://127.0.0.1:3000/Lecture 84 Project/songs/${folder}/info.json`)
@@ -105,10 +105,10 @@ async function displayAlbums(){
     // Load the playlist whenever class is clicked
     Array.from(document.getElementsByClassName("card")).forEach(e => {
         e.addEventListener("click", async item => {
-        songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)
-        playmusic(songs[0])
+            songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)
+            playmusic(songs[0])
+        })
     })
-})
 }
 
 async function main() {
@@ -179,24 +179,24 @@ next.addEventListener("click", () => {
 document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
     // console.log("Setting volume to", e.target.value, "/ 100")
     currentsong.volume = parseInt(e.target.value) / 100
-    if(currentsong.volume > 0){
+    if (currentsong.volume > 0) {
         document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("img/mute.svg", "img/volume.svg");
     }
 })
 
 // Add event listerner to mute volume
-document.querySelector(".volume>img").addEventListener("click", e=>{
-// console.log(e.target)
-// console.log("changing",e.target.src)
-if(e.target.src.includes("img/volume.svg")){
-    e.target.src = e.target.src.replace("img/volume.svg", "img/mute.svg");
-    currentsong.volume = 0;
-    document.querySelector(".range").getElementsByTagName("input")[0].value = 0;
-} else{
-    e.target.src = e.target.src.replace("img/mute.svg", "img/volume.svg");
-    currentsong.volume = .10;
-    document.querySelector(".range").getElementsByTagName("input")[0].value = 10;
-}
+document.querySelector(".volume>img").addEventListener("click", e => {
+    // console.log(e.target)
+    // console.log("changing",e.target.src)
+    if (e.target.src.includes("img/volume.svg")) {
+        e.target.src = e.target.src.replace("img/volume.svg", "img/mute.svg");
+        currentsong.volume = 0;
+        document.querySelector(".range").getElementsByTagName("input")[0].value = 0;
+    } else {
+        e.target.src = e.target.src.replace("img/mute.svg", "img/volume.svg");
+        currentsong.volume = .10;
+        document.querySelector(".range").getElementsByTagName("input")[0].value = 10;
+    }
 })
 
 main();
