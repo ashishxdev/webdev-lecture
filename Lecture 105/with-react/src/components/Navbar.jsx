@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from './Footer'
-
 const Navbar = (props) => {
   return (
     <div>
@@ -10,7 +9,7 @@ const Navbar = (props) => {
         <li>About</li>
         <li>Contact us</li>
       </ul>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

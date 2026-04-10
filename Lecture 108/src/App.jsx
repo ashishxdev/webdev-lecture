@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     alert("Count is changed")
-    setColor(color + 1)
+    setColor(prev => prev + 1)
   }, [count])
   
   // useEffect(() => {
