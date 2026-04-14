@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <%= blogtitle %>
+                <%= aboutme %>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,11 +31,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Dropdown <%=arr%>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>value is <%= blogtitle %><a class="dropdown-item" href="#">Action</a></li>
-                            <li>value is <%= blogcontent %><a class="dropdown-item" href="#">Action</a></li>
+                            <li>value is <%= aboutme %><a class="dropdown-item" href="#">Action</a></li>
+                            <li>value is <%= mybranch %><a class="dropdown-item" href="#">Action</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -43,8 +43,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder=" <%= blogcontent %>"
-                        aria-label="Search" />
+                    <input class="form-control me-2" type="search" placeholder=" <%= mybranch %>" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>

@@ -13,7 +13,7 @@
   "author": "Aashish",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
+    "express": "^5.2.1",
     "slugify": "^1.6.6"
   }
 }

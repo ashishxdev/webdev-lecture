@@ -2,10 +2,10 @@
 // MongoDB Playground
 
 // Select the database to use.
-use('WebDevDatabase');
+use('SigmaDatabase94');
 
-// Insert a few documents into the Lecture94 collection.
-db.getCollection('Lecture94').insertMany([
+// Insert a few documents into the courses collection.
+db.getCollection('courses').insertMany([
   {
     "Name": "Priya Sharma",
     "Citizenship": "Indian",
@@ -59,4 +59,4 @@ db.getCollection('Lecture94').insertMany([
 ]);
 
 // Print a message to the output window.
-console.log(`Done Inserting Data`);
+console.log(`Done Inserting Data in courses collection inside SigmaDatabase94 Database`);

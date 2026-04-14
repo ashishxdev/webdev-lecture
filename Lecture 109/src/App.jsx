@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, use } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,10 +8,10 @@ function App() {
   const btnRef = useRef(0)
 
   useEffect(() => {
-    console.log(`First rendering`)
+    console.log("First Rendering")
     btnRef.current.style.backgroundColor = "red"
   }, [])
-  
+
   return (
     <>
       <div>
@@ -34,7 +34,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <button onClick={()=> {btnRef.current.style.backgroundColor = "blue"}}>Change me</button>
+      <button onClick={() => { btnRef.current.style.backgroundColor = "blue" }}>Change me</button>
     </>
   )
 }

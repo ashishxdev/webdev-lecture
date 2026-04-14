@@ -13,7 +13,7 @@ export const e = 5 // named export
 // or
 
 const obj = {
-    x:5,
-    y:7
+    x: 5,
+    y: 7
 }
 export default obj; // default export

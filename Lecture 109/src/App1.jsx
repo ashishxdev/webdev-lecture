@@ -5,12 +5,25 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  // const a = useRef(0)
+  // useEffect(() => {
+  //   a.current = a.current + 1;
+  //   console.log(`re rendering and the value of a is ${a.current}`)
+  // })
+
+
+  // let a = 0;
+  // useEffect(() => {
+  //   a = a + 1;
+  //   console.log(`Rerendering and value of a is ${a}`)
+  // })
+
   const a = useRef(0)
   useEffect(() => {
+    console.log(`Rerendering and value of a is ${a.current}`)
     a.current = a.current + 1;
-    console.log(`re rendering and the value of a is ${a.current}`)
   })
-  
+
   return (
     <>
       <div>
@@ -21,7 +34,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Vite + React {a.current}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

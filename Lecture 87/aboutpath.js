@@ -1,7 +1,7 @@
 import path from "path"
 // console.log(path)
 
-let myPath = "/Users/aashishrana/Documents/Web Dev (Code with Harry)/Lecture 87/aboutpath.js.jpeg "
+let myPath = "/Users/aashishrana/Documents/Web Dev (Code with Harry)/Lecture 87/aboutpath.js.jpeg"
 console.log(path.extname(myPath))
 console.log(path.dirname(myPath))
 console.log(path.basename(myPath))

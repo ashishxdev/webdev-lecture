@@ -8,11 +8,10 @@ const port = 3000
 
 app.set('view engine', 'ejs');
 
-const getRandom = (arr)=>{
-    let rno = Math.floor(Math.random() * (arr.length - 1))
+const getRandom = (arr) => {
+    let rno = Math.floor(Math.random() * (arr.length))
     return arr[rno]
 }
-
 
 app.get('/', (req, res) => {
     res.render('index', { foo: 'FOO' });
@@ -20,7 +19,7 @@ app.get('/', (req, res) => {
 
 app.get('/generate', async (req, res) => {
     // Clear the collection Employee
-    await Employee.deleteMany({}) 
+    await Employee.deleteMany({})
     // Generate random data
 
     let randomNames = ['Rohan', "Sohan", "Mohan", "Sobhan"]
@@ -32,7 +31,7 @@ app.get('/generate', async (req, res) => {
             salary: Math.floor(Math.random() * 22000),
             language: getRandom(randomLang),
             city: getRandom(randomCities),
-            isManager: (Math.random()>0.5)?true:false
+            isManager: (Math.random() > 0.5) ? true : false
         })
         console.log(e)
     }

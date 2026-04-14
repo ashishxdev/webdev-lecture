@@ -6,26 +6,23 @@ import Navbar from './components/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [adjective, setAdjective] = useState("good")
+  const [adjective, setAdjective] = useState()
 
   // const getAdjective = ()=>{
   //   return "another" + count
   // }
 
   // to freeze this function -> useCallback function freezes the function // It will not rerender now earlier it was rerendering
-  // const getAdjective = useCallback(() => {
-  //     return "another" + count
-  //   },
-  //   [])
   const getAdjective = useCallback(() => {
-      return "another" + count
-    },
+    return "another " + count
+  },
     [count])
-  
+
   return (
     <>
       <div>
-        <Navbar adjective={"awesome"} getAdjective={getAdjective}/>
+        <Navbar adjective={"good"} getAdjective={getAdjective} />
+        <Navbar adjective={"awesome"} getAdjective={getAdjective} />
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
